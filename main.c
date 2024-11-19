@@ -1,9 +1,22 @@
-#include <stdio.h>
-
-int main(){
-
-    //insira aqui seu código
-    printf("Nao implementado ainda...");
-
-    return 0;
+int main()
+{
+    int n,i;
+    scanf("%d", &n);
+    
+    int *vetor = malloc(n*sizeof(int));
+    for(i = 0; n > i ; i++){
+        scanf("%d", &vetor[i]);
+    }
+    i = 0;
+    printf("[");
+    n--;
+    for(i = 0; n > i ; i++){
+        printf("%d,",vetor[i]);
+    }
+    n++;
+    printf("%d]", vetor[n - 1]);
+    
+    
+    free(vetor);
+    
 }
