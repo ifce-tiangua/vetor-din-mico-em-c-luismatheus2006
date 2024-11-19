@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int main()
 {
     int n,i;
@@ -11,7 +14,7 @@ int main()
     printf("[");
     n--;
     for(i = 0; n > i ; i++){
-        printf("%d,",vetor[i]);
+        printf("%d, ",vetor[i]);
     }
     n++;
     printf("%d]", vetor[n - 1]);
